@@ -4,7 +4,7 @@ services:
     container_name: frontend
     build: 
       context: frontend/
-    image: fronted-image-DockCompose
+    image: fronted-image
     ports: 
       - "80:80"
     depends_on:
@@ -13,7 +13,7 @@ services:
     container_name: backend
     build: 
       context: backend/
-    image: backend-image-DockCompose
+    image: backend-image
     ports: 
       - "3500:3500"
     environment:
